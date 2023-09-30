@@ -19,20 +19,20 @@ while opcao != 5:
     print("Insira os dados para adicionar uma nova manifestação:")
     print("Escolha o tipo de manifestação: \n 1 - Sugestão \n 2 - Reclamação \n 3 - Elogio")
     
-    tipoManifestacao = input("Digite o tipo da manifestacao: ")
+    tipoManifestacao = int(input("Digite o tipo da manifestacao: "))
     
     if tipoManifestacao == 1:
       novaSugestao = input("Digite sua sugestão")
-      manifestacoes.append(0, novaSugestao)
+      manifestacoes[0].append(novaSugestao)
       print("Manifestação cadastrada com sucesso")
     
     elif tipoManifestacao == 2:
       novaReclamacao = input("Digite sua Reclamação: ")
-      manifestacoes.append(1, novaReclamacao)
+      manifestacoes[1].append(novaReclamacao)
       print("Manifestação cadastrada com sucesso")
     elif tipoManifestacao == 3:
       novoElogio = input("Digite seu elogio: ")
-      manifestacoes(3, novoElogio)
+      manifestacoes[2].append(novoElogio)
       print("Manifestação cadastrada com sucesso")
   elif opcao == 3:
     
